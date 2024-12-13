@@ -1,0 +1,53 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.6;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+  }
+  
+
+  code, pre {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+  }
+  
+  .app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+
+  a {
+    text-decoration: none;  /* removes underline */
+    transition: color 0.2s;  /* smooth color transition */
+  }
+
+  a:link {
+    color: var(--link-unvisited);
+  }
+  
+  a:visited {
+    color: var(--link-visited);
+  }
+  
+  a:hover {
+    color: var(--link-hover);
+  }

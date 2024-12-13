@@ -1,0 +1,88 @@
+:root {
+  /* Font families */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', Consolas, monospace;
+  --font-heading: 'Montserrat', var(--font-primary);
+  
+  /* Font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  
+  /* Line heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Gruvbox Light Theme */
+  --bg-color: #fbf1c7;
+  --bg-secondary: #f2e5bc;
+  --text-color: #3c3836;
+  --text-secondary: #504945;
+  
+  /* Navigation */
+  --nav-bg: #98971a;
+  --nav-accnt: #79740e;
+  --nav-text: #fbf1c7;
+  --nav-accnt-text: #ebdbb2;
+  
+  /* Interactive */
+  --link-hover: #af3a03;
+  --link-unvisited: #af3a03;  /* color for links you haven't clicked */
+  --link-visited: #8f4f4f;    /* color for links you have clicked */
+  --selection-bg: #d79921;
+  --selection-text: #fbf1c7;
+  
+  /* Structure */
+  --box-border: #d5c4a1;
+  --header-bg: #98971a;
+  --footer-bg: #98971a;
+  --shadow-color: rgba(60, 56, 54, 0.15);
+  
+  /* Accents */
+  --accent-1: #cc241d;
+  --accent-2: #98971a;
+  --accent-3: #d79921;
+  --accent-4: #458588;
+}
+
+.dark-mode {
+  /* Gruvbox Dark Theme */
+  --bg-color: #282828;
+  --bg-secondary: #32302f;
+  --text-color: #ebdbb2;
+  --text-secondary: #d5c4a1;
+  
+  /* Navigation */
+  --nav-bg: #98971a;
+  --nav-accnt: #b8bb26;
+  --nav-text: #282828;
+  --nav-accnt-text: #1d2021;
+  
+  /* Interactive */
+  --link-hover: #fe8019;
+  --link-unvisited: #fe8019;  /* brighter for dark mode */
+  --link-visited: #d3869b;    /* lighter for dark mode */
+  --selection-bg: #d79921;
+  --selection-text: #282828;
+  
+  /* Structure */
+  --box-border: #504945;
+  --header-bg: #98971a;
+  --footer-bg: #98971a;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  
+  /* Accents */
+  --accent-1: #fb4934;
+  --accent-2: #b8bb26;
+  --accent-3: #fabd2f;
+  --accent-4: #83a598;
+}
