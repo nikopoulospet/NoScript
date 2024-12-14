@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  vue-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: noscript
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    # Hot reload for development
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    environment:
+      - NODE_ENV=development
+      # Add any other environment variables your app needs
+      - VITE_API_URL=http://localhost:3000
+
+    # Optional development-specific settings
+    develop:
+      watch:
+        - path: ./package.json
+          action: rebuild
+        - path: ./yarn.lock
+          action: rebuild
+
+networks:
+  default:
+    name: vue-network
+    driver: bridge
